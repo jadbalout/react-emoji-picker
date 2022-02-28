@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './emoji-picker.module.css';
+import styles from '../css/emoji-picker.module.css';
 import EmojiGroup from './EmojiGroup';
 export const emojiDelimeter = ':'; //config
 
@@ -143,4 +143,4 @@ const EmojiPicker: React.FC<EmojiPickerProps> = ({emojiByGroup, className, onEmo
         </div>
     )
 };
-export default EmojiPicker;
+export {EmojiPicker};

@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import { useState } from 'react';
-import EmojiPicker, { simplifyEmojis, emojify, IEmojiGroup, wrapEmoji } from '../src/index'
+import { EmojiPicker, simplifyEmojis, emojify, IEmojiGroup, wrapEmoji } from '../src/index'
 import styles from '../styles/Home.module.css'
 
 

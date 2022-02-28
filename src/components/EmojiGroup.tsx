@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './emoji-picker.module.css';
+import styles from '../css/emoji-picker.module.css';
 import {Emoji, EmojisByName} from './EmojiPicker';
 
 export interface EmojiGroupProps {
