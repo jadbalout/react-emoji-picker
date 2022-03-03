@@ -13,6 +13,7 @@
     inset: auto auto 0px 0px;
     margin: 0px; 
     transform: translate(0px, -56px);
+    max-width: 300px;
 }
 .content {
     overflow: hidden;
