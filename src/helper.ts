@@ -4,7 +4,8 @@ import {SimpleEmojis, IEmojiGroup} from './components/EmojiPicker';
 export const emojiDelimeter = ':';
 
 export const emojify = (emojis: SimpleEmojis, message: string, delimeter: string = emojiDelimeter) => {
-    const matches = message.match(/(:\w*?:)/g);
+    const re = new RegExp(`(${delimeter}\\w*?${delimeter})`, "g");
+    const matches = message.match(re);
     if(!matches) return message;
     for (let emoji of matches) {
         message = message.replace(emoji, `<img src='${emojis[emoji.replaceAll(delimeter, '').toLowerCase()]}'/>`);
